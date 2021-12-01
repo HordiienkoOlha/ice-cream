@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://HordiienkoOlha.github.io/ice-cream",
+  "homepage": "https://hordiienkoolha.github.io/ice-cream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HordiienkoOlha/ice-cream.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
