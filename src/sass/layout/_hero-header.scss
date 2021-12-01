@@ -1,0 +1,22 @@
+.header {
+  background-color: #ffb8ca;
+}
+.nav-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+.header-hero-title {
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &__color {
+    font-size: 58px;
+    color: #d41443;
+  }
+}
