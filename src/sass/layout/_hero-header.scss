@@ -30,6 +30,10 @@
     }
   }
   .header-hero-title {
+    position: absolute;
+    left: 115px;
+    top: 171px;
+
     font-family: Titan One;
     font-size: 38px;
     line-height: 1.16;
@@ -43,6 +47,20 @@
       letter-spacing: 0.06em;
       color: #d41443;
     }
+  }
+}
+
+.hero-image {
+  position: absolute;
+  left: 594px;
+  top: 108px;
+  z-index: 50;
+
+  &::before {
+    content: '';
+    width: 538px;
+    height: 538px;
+    color: #d41443;
   }
 }
 
