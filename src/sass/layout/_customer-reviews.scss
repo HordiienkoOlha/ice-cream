@@ -1,0 +1,106 @@
+.customer-rewiows__container {
+  padding-top: 80px;
+}
+
+.customer-rewiows {
+  background-color: $text-color;
+}
+.customer-rewiows__slider {
+}
+
+.customer-rewiows__item {
+  text-align: center;
+}
+.customer-rewiows__item-feature {
+  // position: relative;
+  margin-top: 29px;
+
+  // z-index: 1;
+  background-color: $reviews-bg-color;
+  &::before {
+    content: '';
+    position: absolute;
+    // left: 30%;
+    // top: 30%;
+
+    // bottom: -34px;
+    // display: block;
+
+    width: 54px;
+    height: 40px;
+    background-image: url('//src/images/customer-reviews/quotes.png');
+
+    // background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+}
+.customer-rewiows__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.customer-reviows__title {
+  position: relative;
+  padding-top: 43px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  min-width: 280px;
+  min-height: 308px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+  background-size: 100% 3px;
+  background-image: linear-gradient(to right, $reviews-line-color, $reviews-line-color);
+  // background-color: $reviews-bg-color;
+  // &::before {
+  //   content: '';
+  // display: inline-block;
+
+  // margin-right: 10px;
+
+  // position: absolute;
+  // top: 28px;
+  // left: 61px;
+
+  // text-align: center;
+
+  // display: inline;
+  // background-repeat: no-repeat;
+  // background-position: center bottom 1px;
+  // background-size: 100% 5px;
+  // background-image: linear-gradient(to top, $text-color, $reviews-line-color);
+
+  // background: repeating-linear-gradients(to right, #999, #999 100%);
+  // background-position: 0 100%;
+  // background-size: 10px 1px;
+  // background-repeat: repeat-x;
+  // z-index: 3;
+}
+// .quotes-icon {
+//   position: absolute;
+//   top: 28px;
+//   left: 61px;
+
+//   width: 54px;
+//   height: 40px;
+
+//   fill: $reviews-line-color;
+//   // z-index: 2;
+// }
+.customer-reviows__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+}
