@@ -2,16 +2,19 @@
   background-color: #ffb8ca;
 }
 @media screen and (min-width: 1280px) {
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 110px;
+  }
   .nav {
     margin-left: 45px;
   }
   .nav-list {
     display: flex;
     align-items: center;
-
-    &__logo {
-      margin-right: 110px;
-    }
 
     &__item:not(:last-child) {
       margin-right: 35px;
@@ -51,16 +54,16 @@
 }
 
 .hero-image {
-  position: absolute;
-  left: 594px;
-  top: 108px;
-  z-index: 50;
-
-  &::before {
-    content: '';
-    width: 538px;
-    height: 538px;
-    color: #d41443;
+  &__item {
+    position: absolute;
+    left: 594px;
+    top: 108px;
+    z-index: 50;
+  }
+  &__item--right {
+    position: absolute;
+    left: 878px;
+    top: 433px;
   }
 }
 
