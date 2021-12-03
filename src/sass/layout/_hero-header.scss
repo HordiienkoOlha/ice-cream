@@ -1,6 +1,26 @@
 .header {
   background-color: #ffb8ca;
 }
+.con {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .flex {
     display: flex;
@@ -32,10 +52,19 @@
       margin-left: 110px;
     }
   }
-  .header-hero-title {
-    position: absolute;
-    left: 115px;
-    top: 171px;
+  .hero {
+    display: flex;
+    justify-content: center;
+
+    &__thumb--right {
+      display: flex;
+      margin-left: 200px;
+      margin-top: 35px;
+    }
+  }
+
+  .hero-title {
+    margin-top: 84px;
 
     font-family: Titan One;
     font-size: 38px;
@@ -53,31 +82,53 @@
   }
 }
 
-.hero-image {
-  &__item {
-    position: absolute;
-    left: 594px;
-    top: 108px;
-    z-index: 50;
-  }
-  &__item--right {
-    position: absolute;
-    left: 878px;
-    top: 433px;
+.hero-btn {
+  display: flex;
+}
+
+.hero-milk {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+
+  &__text {
+    width: 200px;
+
+    font-size: 14px;
+    line-height: 1.42;
+    color: #ffffff;
+    margin-left: 30px;
   }
 }
 
-@media screen and (min-width: 320px) {
-  @media screen and (max-width: 479px) {
+.hero-imege__left {
+  display: flex;
+}
+
+.hero-image {
+  display: flex;
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__item--right {
+    align-items: flex-end;
+    display: flex;
   }
 }
-@media screen and (min-width: 480px) {
-  @media screen and (max-width: 767px) {
-  }
-}
-@media screen and (min-width: 768px) {
-  @media screen and (max-width: 1199px) {
-  }
-}
-@media screen and (min-width: 1280px) {
-}
+// @media screen and (min-width: 320px) {
+//   @media screen and (max-width: 479px) {
+//   }
+// }
+// @media screen and (min-width: 480px) {
+//   @media screen and (max-width: 767px) {
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   @media screen and (max-width: 1199px) {
+//   }
+// }
+// @media screen and (min-width: 1280px) {
+// }
