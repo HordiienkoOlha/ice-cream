@@ -161,6 +161,15 @@
 .about-button__icon {
   fill: $color-accent;
   margin-left: 17px;
-  width: 5px;
-  height: 8px;
+  width: 10px;
+  height: 20px;
+
+  stroke: $color-accent;
+
+  // width: 1em;
+  // height: 1em;
+  // stroke-width: 1;
+  // stroke-linecap: round($number: 2);
+  // stroke: currentColor;
+  // fill: currentColor;
 }
