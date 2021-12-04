@@ -137,9 +137,6 @@
     margin: 0;
   }
 
-  @media screen and (min-width: 1280px) {
-    @include font(16px, 700, 21px);
-  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +156,6 @@
   }
 }
 .about-button__icon {
-  fill: $color-accent;
   margin-left: 17px;
   width: 10px;
   height: 20px;
