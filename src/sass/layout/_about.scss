@@ -172,6 +172,8 @@
   border-radius: 22px;
   border: none;
 
+  transition: background-color 250ms $cubic;
+
   &:hover,
   &:focus {
     background-color: $hover-button;
