@@ -90,3 +90,22 @@
   font-size: 14px;
   line-height: 1.86;
 }
+.customer-reviows__list {
+  display: flex;
+  justify-content: center;
+}
+.customer-reviows__item-icon {
+  display: flex;
+  margin-left: 18px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.customer-reviows__icon-accent {
+  width: 12.4px;
+  height: 11.84px;
+  fill: $primary-icon-color;
+}
+.customer-reviows__icon {
+  fill: $secondary-icon-color;
+}
