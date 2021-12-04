@@ -2,6 +2,7 @@
   background-color: #ffb8ca;
 }
 .con {
+  width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -22,7 +23,7 @@
     margin-right: 110px;
   }
   .nav {
-    margin-left: 45px;
+    margin-right: 110px;
   }
   .nav-list {
     display: flex;
@@ -39,25 +40,18 @@
       line-height: 1.31;
       color: $text-color;
     }
-
-    &__item__btn {
-      margin-left: 110px;
-    }
   }
   .hero {
-    display: flex;
-    justify-content: center;
+    background-color: #ffb8ca;
 
-    &__thumb--right {
+    &__box {
+      padding-top: 84px;
       display: flex;
-      margin-left: 200px;
-      margin-top: 35px;
+      justify-content: space-between;
     }
   }
 
   .hero-title {
-    margin-top: 84px;
-
     font-family: Titan One;
     font-size: 38px;
     line-height: 1.16;
@@ -74,42 +68,77 @@
   }
 }
 
+.number {
+  &__item {
+    position: relative;
+    font-family: Titan One;
+
+    font-size: 46px;
+    line-height: 53px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    z-index: 1;
+    color: #d41443;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      bottom: 65%;
+      left: 85%;
+      z-index: -1;
+    }
+
+    &__text {
+      font-family: DM Sans;
+
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+    }
+  }
+}
+
 .hero-btn {
   display: flex;
+  margin-top: 25px;
 }
 
 .hero-milk {
   display: flex;
   align-items: center;
   margin-top: 56px;
+  padding-bottom: 45px;
 
   &__text {
     width: 200px;
+    margin-bottom: 20px;
 
     font-size: 14px;
     line-height: 1.42;
     color: #ffffff;
-    margin-left: 30px;
   }
 }
 
-.hero-imege__left {
-  display: flex;
-}
-
-.hero-image {
-  display: flex;
-
-  &__item {
-    display: flex;
-    justify-content: flex-start;
+.hero__image {
+  &__item--center {
+    position: absolute;
+    left: 594px;
+    top: 74px;
   }
-
   &__item--right {
-    align-items: flex-end;
-    display: flex;
+    position: absolute;
+    left: 878px;
+    top: 400px;
   }
 }
+
 // @media screen and (min-width: 320px) {
 //   @media screen and (max-width: 479px) {
 //   }
