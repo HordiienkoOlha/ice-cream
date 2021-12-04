@@ -1,23 +1,27 @@
 .customer-reviows__container {
-  padding-top: 100px;
+  padding-top: 194px;
 }
 
 .customer-reviows {
   background-color: $primary-bg-color;
 }
-.customer-reviows__slider {
-}
+// .customer-reviows__slider {
+// }
 
 .customer-reviows__item {
   position: relative;
   text-align: center;
-
+  z-index: 1;
   &::after {
+    position: absolute;
+    top: 28px;
+    left: 61px;
     display: block;
     content: '';
     width: 54px;
     height: 40px;
-    // background-image: url('/src/images/customer-reviews/quotes.png');
+    background-image: url('../images/customer-reviews/quotes.png');
+    z-index: 2;
   }
 }
 
@@ -50,6 +54,7 @@
 
   background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, $reviews-line-color 30px);
   background-size: 180px, 217px;
+  z-index: 3;
 }
 
 .customer-reviows__person {
