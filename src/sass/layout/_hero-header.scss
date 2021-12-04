@@ -124,18 +124,23 @@
     line-height: 1.42;
     color: #ffffff;
   }
+
+  &__thmb {
+    margin-left: 30px;
+  }
 }
 
 .hero__image {
+  position: relative;
   &__item--center {
     position: absolute;
     left: 594px;
-    top: 74px;
+    bottom: 1px;
   }
   &__item--right {
     position: absolute;
     left: 878px;
-    top: 400px;
+    bottom: 1px;
   }
 }
 
