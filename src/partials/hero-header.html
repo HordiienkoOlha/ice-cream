@@ -1,45 +1,131 @@
-<header class="header">
-    <div>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link">Home</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link">About us</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link">How its made?</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link">Our Products</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link">Contact</a>
-                </li>
+<header class="header con">
+        <div class="flex">
+            <div class="logo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="
+                        ./images/hero-header/logo.webp     1x,    
+                        ./images/hero-header/logo@2x.webp  2x
+                        " type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="
+                        ./images/hero-header/logo.png     1x,    
+                        ./images/hero-header/logo@2x.png  2x
+                        ">
+                    <img src="#" alt="" width="">
+                </picture>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link">About us</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link">How its made?</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link">Our Products</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link">Contact</a>
+                    </li>
+                </ul>
             </nav>
-        <h1 class="header-hero-title">ice cream<br>made with<br><span class="header-hero-title__color">passion</span></h1>
-        <ul>
-            <li><button type="button">Products</button></li>
-            <li><button type="button">How its made?</button></li>
-        </ul>
-        <ul>
-            <li>
-                <picture></picture> 
+            <div>
+                <button class="btn-white" type="button"><a class="btn-white__link" href="">Buy now</a>
+                    <svg class="btn-white__icon" width="15" height="15">
+                        <use href="./images/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+</header>
+<section class="hero container"> 
+    <div class="hero__box">  
+            <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title__color">passion</span></h1>
+            <ul class="number">
+                <li class="number__item">16
+                   <p class="number__item__text">cafes</p> 
+                </li>
+                <li class="number__item">23
+                    <p class="number__item__text">food trucks</p>
+                </li>
+            </ul>
+           
+    </div>
+    <ul class="hero-btn">
+        <li class="hero-btn__item">
+            <button class="btn-red" type="button">
+                <a class="btn-red__link" href="#">Products</a>
+            </button>
+        </li>
+        <li class="hero-btn__item">
+            <button class="btn-white" type="button">
+                <a class="btn-white__link href="#">How its made?</a>
+            </button>
+        </li>
+    </ul>
+    <div class="hero-milk">
+            <ul class="hero-imege__left">
+                <li class="hero-imege__left__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                            ./images/hero-header/header-hero-left.webp     1x,    
+                            ./images/hero-header/header-hero-left@2x.webp  2x
+                            " type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="
+                            ./images/hero-header/header-hero-left.png     1x,    
+                            ./images/hero-header/header-hero-left@2x.png  2x
+                            "
+                            >
+                        <img src="#" alt="" width="">
+                    </picture>
+                </li>
+            </ul>
+            <div class="hero-milk__thmb">
+                <p class="hero-milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et</p>
+                <button class="btn-circle">
+                    <svg class="" width="15" height="15">
+                        <use href="./images/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+    </div>
+        <ul class="hero__image">
+            <li class="hero__image__item--center">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="
+                            ./images/hero-header/header-hero.webp     1x,    
+                            ./images/hero-header/header-hero@2x.webp  2x
+                            " type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="
+                            ./images/hero-header/header-hero.png     1x,    
+                            ./images/hero-header/header-hero@2x.png  2x
+                            ">
+                    <img src="#" alt="" width="">
+                </picture>
             </li>
-            <li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            </li>
-            <li>
-                    
+            <li class="hero__image__item--right">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="
+                        ./images/hero-header/header-hero-right.webp     1x,    
+                        ./images/hero-header/header-hero-right@2x.webp  2x
+                        " type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="
+                        ./images/hero-header/header-hero-right.png     1x,    
+                        ./images/hero-header/header-hero-right@2x.png  2x
+                        ">
+                    <img src="#" alt="" width="">
+                </picture>
             </li>
         </ul>
-        <ul>
-            <li>16</li>
-            <li>23</li>
-        </ul>
+</section>
+        
+       
         <!-- Mobile -->
-        <button class="burger-btn">
+        <!-- <button class="burger-btn">
             <svg class="burger-btn__icon" width="20" height="12">
                 <use href=""></use>
             </svg>
@@ -70,6 +156,5 @@
                     <a href="" class="nav-list__link">Contact</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </div> -->
 </header>

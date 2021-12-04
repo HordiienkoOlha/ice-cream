@@ -1,0 +1,193 @@
+.section--about {
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/about/milk/milk.png');
+    background-repeat: no-repeat;
+    background-position: bottom 80px left 50%;
+    background-size: 100% auto;
+    background-size: calc(min(100%, 480px)) auto;
+    padding-bottom: 20px;
+    padding-top: 125px;
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url('../images/about/milk/milk@2x.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about/milk/milk-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom -45px left 50%;
+    background-size: 100% auto;
+    background-size: calc(min(100%, 1282px)) auto;
+    padding-bottom: 20px;
+    padding-top: 125px;
+  }
+
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: url('../images/about/milk/milk-desktop@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 20px;
+  }
+}
+.section--color {
+  background-color: $secondary-bg-color;
+}
+
+.about-flex-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.title-label {
+  font-family: Titan One;
+  margin-bottom: 15px;
+  @include font(18px, 400, 21px);
+
+  @media screen and (min-width: 768px) {
+    @include font(26px, 400, 30px);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(30px, 400, 34px);
+  }
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $subtitle-text-color;
+}
+.section-title {
+  font-family: Titan One;
+  margin-bottom: 26px;
+  @include font(34px, 400, 39px);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+  @media screen and (min-width: 768px) {
+    @include font(48px, 400, 55px);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(58px, 400, 55px);
+    letter-spacing: 0.06em;
+  }
+}
+.about-img {
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 516px;
+  }
+}
+.about-box {
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    margin-left: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 50px;
+    margin-left: 74px;
+  }
+}
+.about-list {
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+}
+.about-list__item {
+  @media screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  &:nth-child(1) {
+    margin-bottom: 38px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:nth-child(1) {
+      margin-bottom: 35px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 44px;
+    }
+  }
+}
+.about-list__text {
+  @include font(12px, 500, 19px);
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 25px);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 28px);
+  }
+  color: $secondary-text-color;
+}
+.about-list__text--dark {
+  color: $primary-text-color;
+}
+.about-button {
+  display: block;
+  margin: 0 auto;
+  @include font(14px, 700, 18px);
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 700, 21px);
+    margin: 0;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-accent;
+
+  width: 176px;
+  height: 44px;
+
+  background-color: $text-color;
+  border-radius: 22px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-button;
+  }
+}
+.about-button__icon {
+  margin-left: 17px;
+  width: 10px;
+  height: 20px;
+
+  stroke: $color-accent;
+
+  // width: 1em;
+  // height: 1em;
+  // stroke-width: 1;
+  // stroke-linecap: round($number: 2);
+  // stroke: currentColor;
+  // fill: currentColor;
+}
