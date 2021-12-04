@@ -1,3 +1,10 @@
+.advantages {
+  padding-top: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 46px;
+  }
+}
+
 .advantages__item-quantity {
   font-family: Titan One;
   font-size: 36px;
@@ -36,11 +43,83 @@
 .advantages__item--bucket::before {
   content: '';
   display: block;
-  width: 33px;
+  max-width: 33px;
   height: 50px;
+  margin-bottom: 16px;
 
   background-image: url(../images/advantages/bucket/bucket.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+    background-image: url(../images/advantages/bucket/bucket@2x.png);
+  }
+}
+
+.advantages__item--apple-bucket::before {
+  content: '';
+  display: block;
+  max-width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-image: url(../images/advantages/apple-bucket/apple-bucket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+    background-image: url(../images/advantages/apple-bucket/apple-bucket@2x.png);
+  }
+}
+
+.advantages__item--lollipop::before {
+  content: '';
+  display: block;
+  max-width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-image: url(../images/advantages/lollipop/lollipop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+    background-image: url(../images/advantages/lollipop/lollipop@2x.png);
+  }
+}
+
+.advantages__item {
+  margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 120px) / 3);
+    margin-right: 66px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
