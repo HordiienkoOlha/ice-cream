@@ -57,6 +57,9 @@
   @media screen and (min-width: 768px) {
     @include font(26px, 400, 30px);
   }
+  @media screen and (min-width: 1280px) {
+    @include font(30px, 400, 34px);
+  }
 
   text-align: center;
   text-transform: uppercase;
@@ -66,15 +69,18 @@
   font-family: Titan One;
   margin-bottom: 26px;
   @include font(34px, 400, 39px);
-
-  @media screen and (min-width: 768px) {
-    @include font(48px, 400, 55px);
-    margin-bottom: 50px;
-  }
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-accent;
+  @media screen and (min-width: 768px) {
+    @include font(48px, 400, 55px);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(58px, 400, 55px);
+    letter-spacing: 0.06em;
+  }
 }
 .about-img {
   @media screen and (max-width: 768px) {
@@ -109,8 +115,24 @@
     padding: 0 30px;
   }
 
-  &:not(:last-child) {
+  &:nth-child(1) {
     margin-bottom: 38px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:nth-child(1) {
+      margin-bottom: 35px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 44px;
+    }
   }
 }
 .about-list__text {
