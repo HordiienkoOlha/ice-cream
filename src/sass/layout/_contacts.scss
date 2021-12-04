@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .contacts-list{
     display: flex;
 
@@ -7,6 +8,37 @@
     border: 1px solid #eeeeee;
     border-radius: 24px;
     margin-right: 31px;
+=======
+.contacts{
+    // background-color: #FFF5F6;
+    background-color: black;
+    padding-top: 132px;
+
+    background-image: url('../images/contacts/background-drops.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 20px;
+}
+
+.contacts-list{
+    display: flex;
+    padding-bottom: 86px;
+
+}
+
+.contacts-list .contacts-list__item:not(:last-child){
+    margin-right: 31px;
+}
+
+.contacts-list__item{
+    background-color: #FFFFFF;;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    border-radius: 24px;
+    margin-right: 31px;
+
+>>>>>>> Stashed changes
 }
 
 .contacts-list__link{
@@ -19,8 +51,74 @@
     padding-bottom: 62px;
 }
 
+<<<<<<< Updated upstream
 .contacts-list__header{
     padding-bottom: 32px;
+=======
+/////////////////////////////////////
+
+.contacts-list__wrapper{
+    display: flex;
+    border-radius: 6px;
+    position: absolute;
+
+    height: 28px;
+
+    justify-content: center;
+
+    &-1{
+        background-color: #F0D1A5;
+        
+    }
+
+    &-2{
+        background-color: #C2E297;
+        
+    }
+
+}
+
+.contacts-list__header{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin: auto 16px;
+
+}
+
+
+/////////////////////////////////////
+
+
+.contacts-list__title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.86;
+    
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    padding-top: 64px;
+    padding-bottom: 10px;
+
+}
+
+.contacts-list__text{
+    font-size: 16px;
+    line-height: 1.8;
+
+    letter-spacing: 0.04em;
+
+    color: #907E82;
+>>>>>>> Stashed changes
 }
 
 .contacts-list__content{
@@ -38,9 +136,14 @@
     }
 }
 
+<<<<<<< Updated upstream
 .contacts-list__title{
     padding-bottom: 10px;
 }
+=======
+/////////////////////////////////////
+
+>>>>>>> Stashed changes
 
 .contacts-list__shedule{
     padding: 32px 0;
@@ -57,6 +160,7 @@
     }
 }
 
+<<<<<<< Updated upstream
 .contacts-list__days{
     
 }
@@ -65,10 +169,88 @@
     
 }
 
+=======
+.contacts-list__works{
+    margin-bottom: 15px;
+}
+
+.contacts-list__days{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.86;
+
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+}
+
+.contacts-list__time{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    color: #FFA5BA;
+}
+
+/////////////////////////////////////
+
+>>>>>>> Stashed changes
 .contacts-list__info{
     padding-top: 32px;
 }
 
 .contacts-list__telmail{
+<<<<<<< Updated upstream
 
+=======
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #907E82;
+}
+
+/////////////////////////////////////
+
+.extra-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 165px;
+}
+
+.extra-list__item {
+    margin-left: 15px;
+}
+
+.extra-list__button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 35px;
+    padding-right: 54px;
+
+    border-radius: 22px;
+    border: 0px;
+
+    &-1{
+        background: #D41342;
+        color:#FFFFFF;
+    }
+
+    &-2{
+        background: #FFFFFF;
+        color: #D41443;
+
+        &:hover{
+            background: #ECEBEB;
+        }
+    }
+>>>>>>> Stashed changes
 }
