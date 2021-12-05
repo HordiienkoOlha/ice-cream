@@ -1,81 +1,236 @@
-.btn-white {
-  border-radius: 22px;
-  background-color: $text-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  padding: 10px 37px;
-
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $color-accent;
-    background-color: #ecebeb;
-    cursor: pointer;
+@media screen and (min-width: 1280px) {
+  .btn-white {
     border-radius: 22px;
+    background-color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    padding: 10px 37px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      background-color: #ecebeb;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      margin-right: 12px;
+      color: $color-accent;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
   }
 
-  &__link {
-    margin-right: 12px;
-    color: $color-accent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+  .btn-red {
+    border-radius: 22px;
+    background-color: $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    padding: 10px 37px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: #c7133e;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      margin-right: 12px;
+
+      color: $text-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
   }
 
-  &__icon {
-    fill: $color-accent;
+  .btn-circle {
+    border-radius: 50%;
+    border: none;
+    width: 26px;
+    height: 26px;
+    display: block;
+
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
-.btn-red {
-  border-radius: 22px;
-  background-color: $color-accent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  padding: 10px 37px;
-
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $text-color;
-    background-color: #c7133e;
-    cursor: pointer;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .btn-white {
     border-radius: 22px;
+    background-color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    padding: 10px 15px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      background-color: #ecebeb;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      color: $color-accent;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
   }
 
-  &__link {
-    margin-right: 12px;
+  .btn-red {
+    border-radius: 22px;
+    background-color: $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    color: $text-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+    border: none;
+    padding: 10px 15px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: #c7133e;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      color: $text-color;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
   }
 
-  &__icon {
-    fill: $color-accent;
+  .btn-circle {
+    border-radius: 50%;
+    border: none;
+    width: 26px;
+    height: 26px;
+    display: block;
+
+    align-items: center;
+    justify-content: flex-start;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .btn-white {
+    border-radius: 22px;
+    background-color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.btn-circle {
-  border-radius: 50%;
-  border: none;
-  width: 26px;
-  height: 26px;
-  display: block;
+    border: none;
+    padding: 10px 15px;
 
-  align-items: center;
-  justify-content: flex-start;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      background-color: #ecebeb;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      color: $color-accent;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
+  }
+
+  .btn-red {
+    border-radius: 22px;
+    background-color: $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    padding: 10px 15px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: #c7133e;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    &__link {
+      color: $text-color;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__icon {
+      fill: $color-accent;
+    }
+  }
+  .btn-circle {
+    display: none;
+  }
 }
