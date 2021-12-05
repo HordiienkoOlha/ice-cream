@@ -3,25 +3,14 @@
     padding-top: 86px;
     padding-bottom: 58px;
 
-  @media screen and (max-width: 767px) {
-    background-image: url('../images/contacts/background-drops.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+  @media screen and (min-width: 768px) {
     padding-top: 119px;
     padding-bottom: 79px;
-    
   }
-  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-    screen and (max-width: 767px) and (min-resolution: 192dpi),
-    screen and (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url('../images/contacts/background-drops@2x.png');
-  }
-
+  
   @media screen and (min-width: 1280px) {
     background-image: url('../images/contacts/background-drops.png');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: auto;
     padding-top: 132px;
     padding-bottom: 83px;
@@ -33,45 +22,36 @@
     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     background-image: url('../images/contacts/background-drops@2x.png');
   }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 119px;
-    padding-bottom: 79px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 132px;
-    padding-bottom: 83px;
-  }
 }
 
-// .section-color{
-//   background-image: linear-gradient(
-//     to bottom,
-//     #ffffff 15%,
-//     #FFF5F6 15%,
-//     #FFF5F6 82%,
-//     #FFF5F6 82%
-//   );
+.section-color{
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 10%,
+    #FFF5F6 10%,
+    #FFF5F6 80%,
+    #FFF5F6 80%
+  );
   
 
-//   @media screen and (min-width: 768px) {
-//     background-image: linear-gradient(
-//       to bottom,
-//     #ffffff 15%,
-//     #FFF5F6 15%,
-//     #FFF5F6 79%,
-//     #FFF5F6 79%)
-//   }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+    #ffffff 23%,
+    #FFF5F6 23%,
+    #FFF5F6 80%,
+    #FFF5F6 80%)
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     background-image: linear-gradient(
-//       to bottom,
-//     #ffffff 15%,
-//     #FFF5F6 15%,
-//     #FFF5F6 77%,
-//     #FFF5F6 77%)
-//   }
-// }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+    #ffffff 25%,
+    #FFF5F6 25%,
+    #FFF5F6 80%,
+    #FFF5F6 80%)
+  }
+}
 
 /** Cards **/
 
@@ -87,7 +67,7 @@
     flex-direction: row;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 86px;
   }
 }
