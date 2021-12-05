@@ -2,16 +2,35 @@
 .section-contacts {
     padding-top: 86px;
     padding-bottom: 58px;
+    background: linear-gradient(
+     to bottom,
+     #ffffff 10%,
+     #FFF5F6 10%,
+     #FFF5F6 80%,
+     #FFF5F6 80%);
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
     padding-bottom: 79px;
+    background: linear-gradient(
+       to bottom,
+     #ffffff 23%,
+     #FFF5F6 23%,
+     #FFF5F6 80%,
+     #FFF5F6 80%)
   }
   
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/contacts/background-drops.png');
+    background-image:url('../images/contacts/background-drops.png'),
+    linear-gradient(
+      to bottom,
+    #ffffff 25%,
+    #FFF5F6 25%,
+    #FFF5F6 80%,
+    #FFF5F6 80%);
     background-position: center;
     background-size: auto;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 83px;
     
@@ -20,38 +39,16 @@
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1280px) and (min-resolution: 192dpi),
     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-    background-image: url('../images/contacts/background-drops@2x.png');
+      background-image:url('../images/contacts/background-drops.png'),
+      linear-gradient(
+        to bottom,
+      #ffffff 25%,
+      #FFF5F6 25%,
+      #FFF5F6 80%,
+      #FFF5F6 80%);
   }
 }
 
-.section-color{
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 10%,
-    #FFF5F6 10%,
-    #FFF5F6 80%,
-    #FFF5F6 80%
-  );
-  
-
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 23%,
-    #FFF5F6 23%,
-    #FFF5F6 80%,
-    #FFF5F6 80%)
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 25%,
-    #FFF5F6 25%,
-    #FFF5F6 80%,
-    #FFF5F6 80%)
-  }
-}
 
 /** Cards **/
 
@@ -100,7 +97,7 @@
         }
       }
     
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
 
         width: 330px;
 
@@ -123,7 +120,7 @@
         padding: 50px 32px;
       }
     
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         flex-basis: calc((100% - 60px) / 3);
         padding-left: 44px;
         padding-right: 43px;
@@ -172,7 +169,7 @@
         padding-bottom: 30px;
       }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.86;
 
@@ -200,7 +197,7 @@
 
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 10px;
     font-size: 16px;
@@ -222,7 +219,7 @@
 
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.81;
 
@@ -249,7 +246,7 @@
         padding-bottom: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         padding-bottom: 32px;
     }
 }
@@ -273,7 +270,7 @@
         padding: 30px 0;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         padding: 32px 0;
     }
 }
@@ -294,7 +291,7 @@
     line-height: 1.86;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.04em;
@@ -313,7 +310,7 @@
     line-height: 1.86;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
     }
@@ -326,7 +323,7 @@
     padding-top: 30px;
 }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     padding-top: 32px;
 }
 }
@@ -343,7 +340,7 @@
     line-height: 1.86;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
     }
@@ -381,7 +378,7 @@
         }
       }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
          &:not(:last-child) {
             margin-right: 15px;
             padding-bottom: 0px;
@@ -392,13 +389,25 @@
 
 
 .extra-list__button {
-    color: #ffffff;
+    // color: #ffffff;
     padding: 10px 0px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
 
     border-radius: 22px;
     border: 0px;
 
     width: 100%;
+
+    &--red{
+      background-color: #D41342;
+    }
+
+    &--white{
+      background-color: #FFFFFF;
+    }
 
     @media screen and (min-width: 768px) {
     padding: 10px 30px;
@@ -414,8 +423,14 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
+      &--red{
+        color: #FFFFFF;
+      }
 
-    // margin-right: 0px;
+      &--white{
+        color: #D41342;
+      }
+    
 }
 
 .extra-list__icon{
@@ -429,14 +444,6 @@
   &--franchise{
     stroke: #D41443;
   }
-
-  @media screen and (min-width: 768px) {
-    
-    }
-
-  @media screen and (min-width: 1200px) {
-    
-    }
 }
 
 //////
