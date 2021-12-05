@@ -2,51 +2,74 @@
 .section-contacts {
     padding-top: 86px;
     padding-bottom: 113px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/contacts/background-drops.png');
+    background-repeat: no-repeat;
+    background-position: bottom 80px left 50%;
+    background-size: 100% auto;
+    background-size: calc(min(100%, 480px)) auto;
+    padding-bottom: 20px;
+    padding-top: 125px;
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/background-drops@2x.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/contacts/background-drops.png');
+    background-repeat: no-repeat;
+    background-position: top 40% left 0%;
+    background-size: 100% auto;
+    background-size: calc(min(100%, 1600px)) auto;
+    padding-bottom: 165px;
+    padding-top: 132px;
+  }
+
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/background-drops@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+    padding-bottom: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 132px;
+    padding-bottom: 165px;
+  }
 }
-//   @media screen and (max-width: 767px) {
-//     background-image: url('../images/contacts/background-drops.png');
-//     background-repeat: no-repeat;
-//     background-position: bottom 80px left 50%;
-//     background-size: 100% auto;
-//     background-size: calc(min(100%, 480px)) auto;
-//     padding-bottom: 20px;
-//     padding-top: 125px;
-//   }
-//   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-//     screen and (max-width: 767px) and (min-resolution: 192dpi),
-//     screen and (max-width: 767px) and (min-resolution: 2dppx) {
-//     background-image: url('../images/contacts/background-drops.png');
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     background-image: url('../images/contacts/background-drops.png');
-//     background-repeat: no-repeat;
-//     background-position: bottom -45px left 50%;
-//     background-size: 100% auto;
-//     background-size: calc(min(100%, 1600px)) auto;
-//     padding-bottom: 165px;
-//     padding-top: 132px;
-//   }
-
-//   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-//     screen and (min-width: 1280px) and (min-resolution: 192dpi),
-//     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-//     background-image: url('../images/contacts/background-drops.png');
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     padding-top: 119px;
-//     padding-bottom: 158px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     padding-top: 132px;
-//     padding-bottom: 165px;
-//   }
-// }
 
 .section-color{
-    background-color:  #ffffff;
-    background-image: -webkit-linear-gradient(-90deg,  #ffffff 50% ,  #FFF5F6 50%);
+  background-image: linear-gradient(
+    to top,
+    #FFF5F6 15%,
+    #FFF5F6 15%,
+    #FFF5F6 82%,
+    #ffffff 82%
+  );
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to top,
+    #FFF5F6 15%,
+    #FFF5F6 15%,
+    #FFF5F6 79%,
+    #ffffff 79%)
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to top,
+    #FFF5F6 15%,
+    #FFF5F6 15%,
+    #FFF5F6 77%,
+    #ffffff 77%)
+  }
 }
 
 /** Cards **/
@@ -151,6 +174,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
+  position: relative;
 
   letter-spacing: 0.04em;
 
@@ -159,8 +183,6 @@
   color: #ffffff;
 
   margin: auto 16px;
-
-  padding-bottom: 25px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
@@ -229,8 +251,8 @@
 }
 
 .contacts-list__content {
-  position: relative;
   padding-bottom: 25px;
+  position: relative;
 
   &::after {
     content: '';
@@ -250,7 +272,6 @@
         padding-bottom: 32px;
     }
 }
-
 
 
 .contacts-list__shedule {
@@ -391,7 +412,7 @@
 
 .extra-list__button {
     color: #ffffff;
-    padding: 10px 17px;
+    padding: 10px 0px;
 
     border-radius: 22px;
     border: 0px;
@@ -412,6 +433,27 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
+
+    // margin-right: 0px;
+}
+
+.extra-list__icon{
+  width: 10px;
+  height: 10px;
+
+  &--location{
+    stroke: #ffffff;
+  }
+
+  &--franchise{
+    stroke: #D41443;
+  }
+
+  @media screen and (min-width: 768px) {
     
-    margin-right: 22px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    
+    }
 }
