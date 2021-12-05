@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 20px;
+  background-color: $secondary-bg-color;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 46px;
   }
@@ -55,6 +56,14 @@
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
     background-image: url(../images/advantages/bucket/bucket@2x.png);
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__item--apple-bucket::before {
@@ -72,6 +81,14 @@
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
     background-image: url(../images/advantages/apple-bucket/apple-bucket@2x.png);
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__item--lollipop::before {
@@ -88,6 +105,14 @@
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
     background-image: url(../images/advantages/lollipop/lollipop@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
   }
 }
 

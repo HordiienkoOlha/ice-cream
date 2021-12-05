@@ -1,12 +1,12 @@
-<header class="header con">
-        <div class="flex">
+<header class="header">
+        <div class="flex con">
             <div class="logo">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="
+                    <source media="(min-width: 320px)" srcset="
                         ./images/hero-header/logo.webp     1x,    
                         ./images/hero-header/logo@2x.webp  2x
                         " type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="
+                    <source media="(min-width: 320px)" srcset="
                         ./images/hero-header/logo.png     1x,    
                         ./images/hero-header/logo@2x.png  2x
                         ">
@@ -32,17 +32,23 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <button class="btn-white" type="button"><a class="btn-white__link" href="">Buy now</a>
-                    <svg class="btn-white__icon" width="15" height="15">
-                        <use href="./images/sprite.svg#arrow"></use>
+            <div class="header__box">
+                <button class="header__btn--burger" type="button">
+                    <svg class="header__btn--burger__icon" width="15" height="15">
+                        <use href="./images/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+                <button class="header__btn--white" type="button"><a class="header__btn--white__link" href="">Buy now</a>
+                    <svg class="header__btn--white__icon" width="8" height="8">
+                        <use href="./images/sprite.svg#angle-bracket"></use>
                     </svg>
                 </button>
             </div>
         </div>
 </header>
-<section class="hero container"> 
-    <div class="hero__box">  
+<section class="hero">
+    <div class="container">
+        <div class="hero__box">  
             <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title__color">passion</span></h1>
             <ul class="number">
                 <li class="number__item">16
@@ -53,8 +59,8 @@
                 </li>
             </ul>
            
-    </div>
-    <ul class="hero-btn">
+        </div>
+        <ul class="hero-btn">
         <li class="hero-btn__item">
             <button class="btn-red" type="button">
                 <a class="btn-red__link" href="#">Products</a>
@@ -65,62 +71,95 @@
                 <a class="btn-white__link href="#">How its made?</a>
             </button>
         </li>
-    </ul>
-    <div class="hero-milk">
+        </ul>
+        <div class="hero-milk">
             <ul class="hero-imege__left">
                 <li class="hero-imege__left__item">
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="
-                            ./images/hero-header/header-hero-left.webp     1x,    
-                            ./images/hero-header/header-hero-left@2x.webp  2x
+                        <source media="(min-width: 1280px)" srcset="
+                            ./images/hero-header/desktop/header-hero-left.webp     1x,    
+                            ./images/hero-header/desktop/header-hero-left@2x.webp  2x
                             " type="image/webp">
-                        <source media="(min-width: 1200px)" srcset="
-                            ./images/hero-header/header-hero-left.png     1x,    
-                            ./images/hero-header/header-hero-left@2x.png  2x
+                        <source media="(min-width: 1280px)" srcset="
+                            ./images/hero-header/desktop/header-hero-left.png     1x,    
+                            ./images/hero-header/desktop/header-hero-left@2x.png  2x
                             "
                             >
+                        <source media="(min-width: 768px)" srcset="
+                            ./images/hero-header/tablet/header-hero-left-tablet.webp     1x,    
+                            ./images/hero-header/tablet/header-hero-left-tablet@2x.webp  2x
+                            " type="image/webp">
+                        <source media="(min-width: 768px)" srcset="
+                            ./images/hero-header/tablet/header-hero-left-tablet.png     1x,    
+                            ./images/hero-header/tablet/header-hero-left-tablet@2x.png  2x
+                            ">
                         <img src="#" alt="" width="">
                     </picture>
                 </li>
             </ul>
-            <div class="hero-milk__thmb">
+            <div class="hero-milk__thumb">
                 <p class="hero-milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et</p>
                 <button class="btn-circle">
-                    <svg class="" width="15" height="15">
+                    <svg class="btn-circle__icon" >
                         <use href="./images/sprite.svg#arrow"></use>
                     </svg>
                 </button>
             </div>
-    </div>
+        </div>
         <ul class="hero__image">
             <li class="hero__image__item--center">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="
-                            ./images/hero-header/header-hero.webp     1x,    
-                            ./images/hero-header/header-hero@2x.webp  2x
+                    <source media="(min-width: 1280px)" srcset="
+                            ./images/hero-header/desktop/header-hero.webp     1x,    
+                            ./images/hero-header/desktop/header-hero@2x.webp  2x
                             " type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="
-                            ./images/hero-header/header-hero.png     1x,    
-                            ./images/hero-header/header-hero@2x.png  2x
+                    <source media="(min-width: 1280px)" srcset="
+                            ./images/hero-header/desktop/header-hero.png     1x,    
+                            ./images/hero-header/desktop/header-hero@2x.png  2x
                             ">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/hero-header/tablet/header-hero-tablet.webp     1x,    
+                        ./images/hero-header/tablet/header-hero-tablet@2x.webp  2x
+                        " type="image/webp">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/hero-header/tablet/header-hero-tablet.png     1x,    
+                        ./images/hero-header/tablet/header-hero-tablet@2x.png  2x
+                        ">
+                    <source media="(min-width: 320px)" srcset="
+                        ./images/hero-header/mobile/header-hero-mobile.webp     1x,    
+                        ./images/hero-header/mobile/header-hero-mobile@2x.webp  2x
+                        " type="image/webp">
+                    <source media="(min-width: 320px)" srcset="
+                        ./images/hero-header/mobile/header-hero-mobile.png     1x,    
+                        ./images/hero-header/mobile/header-hero-mobile@2x.png  2x
+                        ">
                     <img src="#" alt="" width="">
                 </picture>
             </li>
             <li class="hero__image__item--right">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="
-                        ./images/hero-header/header-hero-right.webp     1x,    
-                        ./images/hero-header/header-hero-right@2x.webp  2x
+                    <source media="(min-width: 1280px)" srcset="
+                        ./images/hero-header/desktop/header-hero-right.webp     1x,    
+                        ./images/hero-header/desktop/header-hero-right@2x.webp  2x
                         " type="image/webp">
                     <source media="(min-width: 1200px)" srcset="
-                        ./images/hero-header/header-hero-right.png     1x,    
-                        ./images/hero-header/header-hero-right@2x.png  2x
+                        ./images/hero-header/desktop/header-hero-right.png     1x,    
+                        ./images/hero-header/desktop/header-hero-right@2x.png  2x
+                        ">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/hero-header/tablet/header-hero-right-tablet.webp     1x,    
+                        ./images/hero-header/tablet/header-hero-right-tablet@2x.webp  2x
+                        " type="image/webp">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/hero-header/tablet/header-hero-right-tablet.png     1x,    
+                        ./images/hero-header/tablet/header-hero-right-tablet@2x.png  2x
                         ">
                     <img src="#" alt="" width="">
                 </picture>
             </li>
         </ul>
+    </div>
 </section>
         
        
@@ -157,4 +196,3 @@
                 </li>
             </ul>
         </div> -->
-</header>
