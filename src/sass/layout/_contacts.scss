@@ -2,13 +2,12 @@
 .section-contacts {
     padding-top: 86px;
     padding-bottom: 58px;
-    background-size: cover;
 
   @media screen and (max-width: 767px) {
     background-image: url('../images/contacts/background-drops.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: bottom 80px left 50%;
-    background-size: cover;
+    background-size: auto;
     padding-top: 119px;
     padding-bottom: 79px;
     
@@ -21,9 +20,9 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url('../images/contacts/background-drops.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top 40% left 0%;
-    background-size: cover;
+    background-size: auto;
     padding-top: 132px;
     padding-bottom: 83px;
     
@@ -45,34 +44,34 @@
   }
 }
 
-.section-color{
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 15%,
-    #FFF5F6 15%,
-    #FFF5F6 82%,
-    #FFF5F6 82%
-  );
+// .section-color{
+//   background-image: linear-gradient(
+//     to bottom,
+//     #ffffff 15%,
+//     #FFF5F6 15%,
+//     #FFF5F6 82%,
+//     #FFF5F6 82%
+//   );
   
 
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 15%,
-    #FFF5F6 15%,
-    #FFF5F6 79%,
-    #FFF5F6 79%)
-  }
+//   @media screen and (min-width: 768px) {
+//     background-image: linear-gradient(
+//       to bottom,
+//     #ffffff 15%,
+//     #FFF5F6 15%,
+//     #FFF5F6 79%,
+//     #FFF5F6 79%)
+//   }
 
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 15%,
-    #FFF5F6 15%,
-    #FFF5F6 77%,
-    #FFF5F6 77%)
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     background-image: linear-gradient(
+//       to bottom,
+//     #ffffff 15%,
+//     #FFF5F6 15%,
+//     #FFF5F6 77%,
+//     #FFF5F6 77%)
+//   }
+// }
 
 /** Cards **/
 
