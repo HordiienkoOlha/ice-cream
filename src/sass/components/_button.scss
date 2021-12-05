@@ -71,14 +71,19 @@
   }
 
   .btn-circle {
-    border-radius: 50%;
-    border: none;
+    display: block;
     width: 26px;
     height: 26px;
-    display: block;
+    border-radius: 50%;
+    border-style: none;
+    border-width: 0;
+    background-color: #ffffff;
 
-    align-items: center;
-    justify-content: flex-start;
+    &__icon {
+      width: 10px;
+      height: 10px;
+      fill: #d41443;
+    }
   }
 }
 
@@ -152,14 +157,19 @@
   }
 
   .btn-circle {
-    border-radius: 50%;
-    border: none;
-    width: 26px;
-    height: 26px;
     display: block;
 
-    align-items: center;
-    justify-content: flex-start;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+
+    &__icon {
+      width: 10px;
+      height: 10px;
+      fill: #d41443;
+    }
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
