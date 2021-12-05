@@ -392,10 +392,22 @@
     // color: #ffffff;
     padding: 10px 0px;
 
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+
     border-radius: 22px;
     border: 0px;
 
     width: 100%;
+
+    &--red{
+      background-color: #D41342;
+    }
+
+    &--white{
+      background-color: #FFFFFF;
+    }
 
     @media screen and (min-width: 768px) {
     padding: 10px 30px;
@@ -411,8 +423,14 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
+      &--red{
+        color: #FFFFFF;
+      }
 
-    // margin-right: 0px;
+      &--white{
+        color: #D41342;
+      }
+    
 }
 
 .extra-list__icon{
@@ -426,14 +444,6 @@
   &--franchise{
     stroke: #D41443;
   }
-
-  @media screen and (min-width: 768px) {
-    
-    }
-
-  @media screen and (min-width: 1200px) {
-    
-    }
 }
 
 //////
