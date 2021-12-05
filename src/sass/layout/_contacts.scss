@@ -1,15 +1,17 @@
 
 .section-contacts {
     padding-top: 86px;
-    padding-bottom: 113px;
+    padding-bottom: 58px;
+    background-size: cover;
 
   @media screen and (max-width: 767px) {
     background-image: url('../images/contacts/background-drops.png');
     background-repeat: no-repeat;
     background-position: bottom 80px left 50%;
     background-size: cover;
-    padding-bottom: 158px;
     padding-top: 119px;
+    padding-bottom: 79px;
+    
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
@@ -21,10 +23,10 @@
     background-image: url('../images/contacts/background-drops.png');
     background-repeat: no-repeat;
     background-position: top 40% left 0%;
-    background-size: 100% auto;
-    background-size: calc(min(100%, 1600px)) auto;
-    padding-bottom: 165px;
+    background-size: cover;
     padding-top: 132px;
+    padding-bottom: 83px;
+    
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
@@ -35,11 +37,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
-    padding-bottom: 158px;
+    padding-bottom: 79px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
-    padding-bottom: 165px;
+    padding-bottom: 83px;
   }
 }
 
@@ -51,6 +53,7 @@
     #FFF5F6 82%,
     #FFF5F6 82%
   );
+  
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
