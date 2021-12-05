@@ -6,7 +6,7 @@
     padding-bottom: 110px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 130px;
     padding-bottom: 120px;
   }
@@ -22,7 +22,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: $subtitle-text-color;
 
   margin-bottom: 15px;
 
@@ -30,7 +30,7 @@
     font-size: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     letter-spacing: 0.04em;
   }
@@ -46,7 +46,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $color-accent;
   margin-bottom: 144px;
 
   @media screen and (min-width: 768px) {
@@ -54,7 +54,7 @@
     margin-bottom: 150px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     letter-spacing: 0.06em;
     margin-bottom: 260px;
@@ -113,15 +113,15 @@
 }
 
 .products__item--pink {
-  background-color: #ffb8ca;
+  background-color: $header-bg-color;
 }
 
 .products__item--sand {
-  background-color: #f0d1a5;
+  background-color: $section-bg-color;
 }
 
 .products__item--grass {
-  background-color: #c2e297;
+  background-color: $products-item-bg-color;
 }
 
 .products__title {
@@ -134,7 +134,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $text-color;
   margin-bottom: 66px;
 
   @media screen and (min-width: 768px) {
@@ -151,9 +151,9 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: $primary-bg-color;
     display: block;
-    color: #ffffff;
+    color: $text-color;
 
     box-shadow: 10px 0, -10px 0;
     margin: 30px auto 0 auto;
@@ -303,14 +303,14 @@
   letter-spacing: 0.04em;
   text-align: center;
 
-  color: #ffffff;
+  color: $text-color;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     margin-bottom: 60px;
   }
@@ -323,12 +323,12 @@
   border-radius: 50%;
   border-style: none;
   border-width: 0;
-  background-color: #ffffff;
+  background-color: $primary-bg-color;
   margin: 0 auto;
 }
 
 .products-button__icon {
   width: 10px;
   height: 10px;
-  fill: #d41443;
+  fill: $color-accent;
 }
