@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: bottom -45px left 50%;
     background-size: 100% auto;
-    background-size: calc(min(100%, 1600px)) auto;
+    background-size: calc(min(100%, 1282px)) auto;
     padding-bottom: 20px;
     padding-top: 125px;
   }
@@ -34,7 +34,7 @@
     padding-top: 130px;
     padding-bottom: 33px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 130px;
     padding-bottom: 20px;
   }
@@ -57,6 +57,9 @@
   @media screen and (min-width: 768px) {
     @include font(26px, 400, 30px);
   }
+  @media screen and (min-width: 1280px) {
+    @include font(30px, 400, 34px);
+  }
 
   text-align: center;
   text-transform: uppercase;
@@ -66,15 +69,18 @@
   font-family: Titan One;
   margin-bottom: 26px;
   @include font(34px, 400, 39px);
-
-  @media screen and (min-width: 768px) {
-    @include font(48px, 400, 55px);
-    margin-bottom: 50px;
-  }
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-accent;
+  @media screen and (min-width: 768px) {
+    @include font(48px, 400, 55px);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(58px, 400, 55px);
+    letter-spacing: 0.06em;
+  }
 }
 .about-img {
   @media screen and (max-width: 768px) {
@@ -84,7 +90,7 @@
   @media screen and (min-width: 768px) {
     max-width: 340px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     max-width: 516px;
   }
 }
@@ -109,8 +115,24 @@
     padding: 0 30px;
   }
 
-  &:not(:last-child) {
+  &:nth-child(1) {
     margin-bottom: 38px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:nth-child(1) {
+      margin-bottom: 35px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 44px;
+    }
   }
 }
 .about-list__text {
@@ -137,9 +159,6 @@
     margin: 0;
   }
 
-  @media screen and (min-width: 1280px) {
-    @include font(16px, 700, 21px);
-  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,14 +172,24 @@
   border-radius: 22px;
   border: none;
 
+  transition: background-color 250ms $cubic;
+
   &:hover,
   &:focus {
     background-color: $hover-button;
   }
 }
 .about-button__icon {
-  fill: $color-accent;
   margin-left: 17px;
-  width: 5px;
-  height: 8px;
+  width: 10px;
+  height: 20px;
+
+  stroke: $color-accent;
+
+  // width: 1em;
+  // height: 1em;
+  // stroke-width: 1;
+  // stroke-linecap: round($number: 2);
+  // stroke: currentColor;
+  // fill: currentColor;
 }
