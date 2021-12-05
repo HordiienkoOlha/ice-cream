@@ -34,7 +34,16 @@
       }
 
       &__icon {
-        fill: $color-accent;
+        stroke: $color-accent;
+      }
+    }
+    &__btn--burger {
+      background: transparent;
+      border: none;
+      margin-right: 30px;
+      z-index: 15;
+      &__icon {
+        stroke: $color-accent;
       }
     }
   }
@@ -69,6 +78,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .header__btn--burger {
+    display: none;
+  }
   .flex {
     display: flex;
     align-items: center;
@@ -215,6 +227,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header__box {
+    display: flex;
+  }
   .flex {
     display: flex;
     align-items: center;
@@ -672,14 +687,5 @@
       bottom: 1px;
       z-index: 10;
     }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero {
-    padding-left: calc(20px + (40 + 20) * ((100vw - 320px) / (767 - 320)));
-  }
-  .header {
-    padding-left: calc(20px + (40 + 20) * ((100vw - 320px) / (767 - 320)));
   }
 }
