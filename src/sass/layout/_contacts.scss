@@ -7,10 +7,9 @@
     background-image: url('../images/contacts/background-drops.png');
     background-repeat: no-repeat;
     background-position: bottom 80px left 50%;
-    background-size: 100% auto;
-    background-size: calc(min(100%, 480px)) auto;
-    padding-bottom: 20px;
-    padding-top: 125px;
+    background-size: cover;
+    padding-bottom: 158px;
+    padding-top: 119px;
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
@@ -46,29 +45,29 @@
 
 .section-color{
   background-image: linear-gradient(
-    to top,
-    #FFF5F6 15%,
+    to bottom,
+    #ffffff 15%,
     #FFF5F6 15%,
     #FFF5F6 82%,
-    #ffffff 82%
+    #FFF5F6 82%
   );
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
-      to top,
-    #FFF5F6 15%,
+      to bottom,
+    #ffffff 15%,
     #FFF5F6 15%,
     #FFF5F6 79%,
-    #ffffff 79%)
+    #FFF5F6 79%)
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
-      to top,
-    #FFF5F6 15%,
+      to bottom,
+    #ffffff 15%,
     #FFF5F6 15%,
     #FFF5F6 77%,
-    #ffffff 77%)
+    #FFF5F6 77%)
   }
 }
 
