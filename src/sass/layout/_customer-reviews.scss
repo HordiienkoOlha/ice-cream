@@ -1,5 +1,6 @@
 .customer-reviows__container {
   padding-top: 194px;
+  padding-bottom: 66px;
 }
 
 .customer-reviows {
@@ -19,23 +20,63 @@
   top: -114px;
   left: 50%;
   transform: translate(-50%, 0);
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
+      top: -104px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    top: -100px;
+  }
 }
+
 .customer-reviows__item-feature {
-  // position: relative;
   padding-top: 43px;
   padding-right: 66px;
   padding-bottom: 26px;
   padding-left: 57px;
-  margin-bottom: 30px;
 
   background-color: $reviews-bg-color;
+  &::after {
+    position: absolute;
+    top: 29px;
+    left: 56px;
+    display: block;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url('../images/customer-reviews/quotes.png');
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      @media screen and (max-width: 1279px) {
+        top: 30px;
+        left: 42px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      top: 35px;
+      left: 66px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
+      padding-top: 47px;
+      padding-right: 80px;
+      padding-bottom: 34px;
+      padding-left: 80px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 47px;
+    padding-right: 88px;
+    padding-bottom: 39px;
+    padding-left: 88px;
+  }
 }
 .customer-reviows__text {
   position: relative;
-  // min-width: 280px;
-  // min-height: 308px;
-
-  background-color: $reviews-bg-color;
 
   font-weight: 500;
   font-size: 12px;
@@ -46,16 +87,16 @@
   background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, $reviews-line-color 30px);
   background-size: 180px, 217px;
   z-index: 3;
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: '';
-    width: 54px;
-    height: 40px;
-    background-image: url('../images/customer-reviews/quotes.png');
-    z-index: -1;
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
+      font-size: 14px;
+      line-height: 2.16;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, $reviews-line-color 30px);
   }
 }
 .dots,
@@ -65,6 +106,18 @@
   height: 4px;
   background: $button-hover-color;
   border-radius: 50%;
+}
+.customer-reviows__retreat {
+  padding-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
+      padding-top: 24px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 47px;
+  }
 }
 .dots {
   margin: 0 auto;
@@ -89,6 +142,14 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
 .customer-reviows__list {
   display: flex;
