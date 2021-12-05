@@ -2,16 +2,35 @@
 .section-contacts {
     padding-top: 86px;
     padding-bottom: 58px;
+    background: linear-gradient(
+     to bottom,
+     #ffffff 10%,
+     #FFF5F6 10%,
+     #FFF5F6 80%,
+     #FFF5F6 80%);
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
     padding-bottom: 79px;
+    background: linear-gradient(
+       to bottom,
+     #ffffff 23%,
+     #FFF5F6 23%,
+     #FFF5F6 80%,
+     #FFF5F6 80%)
   }
   
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/contacts/background-drops.png');
+    background-image:url('../images/contacts/background-drops.png'),
+    linear-gradient(
+      to bottom,
+    #ffffff 25%,
+    #FFF5F6 25%,
+    #FFF5F6 80%,
+    #FFF5F6 80%);
     background-position: center;
     background-size: auto;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 83px;
     
@@ -20,38 +39,16 @@
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1280px) and (min-resolution: 192dpi),
     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-    background-image: url('../images/contacts/background-drops@2x.png');
+      background-image:url('../images/contacts/background-drops.png'),
+      linear-gradient(
+        to bottom,
+      #ffffff 25%,
+      #FFF5F6 25%,
+      #FFF5F6 80%,
+      #FFF5F6 80%);
   }
 }
 
-.section-color{
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 10%,
-    #FFF5F6 10%,
-    #FFF5F6 80%,
-    #FFF5F6 80%
-  );
-  
-
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 23%,
-    #FFF5F6 23%,
-    #FFF5F6 80%,
-    #FFF5F6 80%)
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: linear-gradient(
-      to bottom,
-    #ffffff 25%,
-    #FFF5F6 25%,
-    #FFF5F6 80%,
-    #FFF5F6 80%)
-  }
-}
 
 /** Cards **/
 
@@ -392,7 +389,7 @@
 
 
 .extra-list__button {
-    color: #ffffff;
+    // color: #ffffff;
     padding: 10px 0px;
 
     border-radius: 22px;
