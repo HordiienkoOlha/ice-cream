@@ -388,7 +388,7 @@
     justify-content: space-between;
   }
   .logo {
-    margin-right: 110px;
+    margin-right: 60px;
   }
   .nav {
     margin-right: 110px;
@@ -412,13 +412,14 @@
     }
   }
   .hero {
+    overflow: hidden;
     background-color: #ffb8ca;
     height: 430px;
 
     &__box {
+      position: relative;
       padding-top: 140px;
-      display: flex;
-      justify-content: space-between;
+      z-index: 15;
     }
   }
 
@@ -480,6 +481,8 @@
   .hero-btn {
     margin-top: 20px;
     display: flex;
+    position: relative;
+    z-index: 15;
   }
 
   .hero-milk {
@@ -503,14 +506,15 @@
 
   .hero__image {
     position: relative;
+
     &__item--center {
       position: absolute;
-      left: 10px;
-      bottom: 1px;
+      left: 105px;
+      bottom: -87px;
       z-index: 10;
 
       &::after {
-        display: none;
+        display: block;
         content: '';
         position: absolute;
         width: 322px;
@@ -518,7 +522,7 @@
         border-radius: 50%;
         background-color: #ffa5ba;
         bottom: 50px;
-        left: -75px;
+        left: -40px;
         z-index: -1;
       }
     }
@@ -530,7 +534,18 @@
       z-index: 10;
     }
   }
+
+  .header__btn--burger {
+    background: transparent;
+    border: none;
+
+    z-index: 15;
+    &__icon {
+      stroke: $color-accent;
+    }
+  }
 }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .header {
     background-color: #ffb8ca;
@@ -546,7 +561,7 @@
     justify-content: space-between;
   }
   .logo {
-    margin-right: 110px;
+    margin-right: 60px;
   }
   .nav {
     margin-right: 110px;
@@ -570,13 +585,14 @@
     }
   }
   .hero {
+    overflow: hidden;
     background-color: #ffb8ca;
     height: 430px;
 
     &__box {
+      position: relative;
       padding-top: 140px;
-      display: flex;
-      justify-content: space-between;
+      z-index: 15;
     }
   }
 
@@ -638,6 +654,8 @@
   .hero-btn {
     margin-top: 20px;
     display: flex;
+    position: relative;
+    z-index: 15;
   }
 
   .hero-milk {
@@ -661,14 +679,15 @@
 
   .hero__image {
     position: relative;
+
     &__item--center {
       position: absolute;
-      left: 100px;
-      bottom: -68px;
+      left: 105px;
+      bottom: -87px;
       z-index: 10;
 
       &::after {
-        display: none;
+        display: block;
         content: '';
         position: absolute;
         width: 322px;
@@ -676,7 +695,7 @@
         border-radius: 50%;
         background-color: #ffa5ba;
         bottom: 50px;
-        left: -75px;
+        left: -40px;
         z-index: -1;
       }
     }
@@ -686,6 +705,16 @@
       left: 535px;
       bottom: 1px;
       z-index: 10;
+    }
+  }
+
+  .header__btn--burger {
+    background: transparent;
+    border: none;
+
+    z-index: 15;
+    &__icon {
+      stroke: $color-accent;
     }
   }
 }
