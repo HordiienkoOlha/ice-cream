@@ -85,6 +85,9 @@
       fill: #d41443;
     }
   }
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -134,7 +137,7 @@
 
     transition-property: color, background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $cubic;
 
     &:hover,
     &:focus {
@@ -315,5 +318,101 @@
 
   .btn-circle {
     display: none;
+  }
+}
+
+// mobile menu
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .mobile-menu {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 48px 40px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition-property: visibility, opacity, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    right: 0;
+
+    width: 255px;
+    height: 100vh;
+
+    padding: 48px 40px;
+
+    background-color: #e17992;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition-property: visibility, opacity, background-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-menu {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 48px 40px;
+
+    background-color: #e17992;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition-property: visibility, opacity, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 }

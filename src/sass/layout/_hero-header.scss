@@ -106,6 +106,15 @@
       font-size: 16px;
       line-height: 1.31;
       color: $text-color;
+      &:hover,
+      &:focus {
+        color: $button-color;
+        cursor: pointer;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: $cubic;
+      }
     }
   }
   .hero {
