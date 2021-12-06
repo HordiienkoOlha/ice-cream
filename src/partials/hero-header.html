@@ -1,4 +1,5 @@
-<header class="header">
+<!-- Header -->
+<header class="header" id="home">
         <div class="flex con">
             <div class="logo">
                 <picture>
@@ -16,19 +17,19 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link">Home</a>
+                        <a href="#home" class="nav-list__link">Home</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link">About us</a>
+                        <a href="#about" class="nav-list__link">About us</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link">How its made?</a>
+                        <a href="#about" class="nav-list__link">How its made?</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link">Our Products</a>
+                        <a href="#products" class="nav-list__link">Our Products</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="" class="nav-list__link">Contact</a>
+                        <a href="#contacts" class="nav-list__link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -43,6 +44,7 @@
                         <use href="./images/sprite.svg#angle-bracket"></use>
                     </svg>
                 </button>
+<<<<<<< Updated upstream
                 <div class="mobile-menu" data-menu>
                     <button class="" data-menu-close>
                         <svg class="" width="15" height="15">
@@ -69,12 +71,45 @@
                         </li>
                         <li class="">
                             <a href="" class="">Contact</a>
+=======
+<!-- Mobile Menu -->
+                <div class="mobile-menu" data-menu>
+                    <div class="btn-list">
+                        <button class="menu-close" data-menu-close>
+                            <svg class="menu-close__icon" width="15" height="15">
+                                <use href="./images/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                        <button class="mobile-menu__btn" type="button">
+                            <a class="mobile-menu__btn__link" href="">Buy now</a>
+                            <svg class="mobile-menu__btn__icon" width="8" height="8">
+                                <use href="./images/sprite.svg#angle-bracket"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item">
+                            <a href="#home" class="menu-nav__link">Home</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#about" class="menu-nav__link">About us</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#about" class="menu-nav__link">How its made?</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#products" class="menu-nav__link">Our Products</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#contacts" class="menu-nav__link">Contact</a>
+>>>>>>> Stashed changes
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 </header>
+<!-- Hero -->
 <section class="hero">
     <div class="container">
         <div class="hero__box">  
@@ -92,12 +127,12 @@
         <ul class="hero-btn">
         <li class="hero-btn__item">
             <button class="btn-red" type="button">
-                <a class="btn-red__link" href="#">Products</a>
+                <a class="btn-red__link" href="#products">Products</a>
             </button>
         </li>
         <li class="hero-btn__item">
             <button class="btn-white" type="button">
-                <a class="btn-white__link href="#">How its made?</a>
+                <a class="btn-white__link" href="#about">How its made?</a>
             </button>
         </li>
         </ul>
