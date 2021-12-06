@@ -1,20 +1,20 @@
-.scrollup{
-    width:40px;
-    height:40px;
-    opacity:0.3;
-    position:fixed;
-    bottom:50px;
-    right:100px;
-    display:none;
-    text-indent:-9999px;
-    background: red;
-    border-radius: 50%;
-    .scrollup__icon {
-        position: absolute;
-        stroke: black;
-        top: 0;
-        left: 0;
-        z-index: 23;
-    }
-    
-    }
+.scrollup {
+        width: 40px;
+        height: 40px;
+        opacity: 0.3;
+        position: fixed;
+        bottom: 50px;
+        right: 100px;
+        display: none;
+        text-indent: -9999px;
+        background: red;
+        border-radius: 50%;
+        .scrollup__icon {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                stroke-width: 0;
+                stroke: currentColor;
+                fill: currentColor;
+        }
+}
