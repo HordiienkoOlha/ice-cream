@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://hordiienkoolha.github.io/ice-cream",
   "scripts": {
-    "main": "parcel src/*.html",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream/"
   },
   "repository": {
