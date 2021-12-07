@@ -1,6 +1,12 @@
 .advantages {
   padding-top: 20px;
+  padding-bottom: 47px;
   background-color: $secondary-bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 90px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 46px;
   }
@@ -12,14 +18,17 @@
   line-height: 1.13;
   text-transform: uppercase;
   color: $color-accent;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 48px;
     line-height: 1.14;
+    margin-bottom: 13px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
+    margin-bottom: 16px;
   }
 }
 
