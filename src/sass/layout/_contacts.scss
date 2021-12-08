@@ -1,54 +1,31 @@
-
 .section-contacts {
-    padding-top: 86px;
-    padding-bottom: 58px;
-    background: linear-gradient(
-     to bottom,
-     #ffffff 10%,
-     #FFF5F6 10%,
-     #FFF5F6 80%,
-     #FFF5F6 80%);
+  padding-top: 86px;
+  padding-bottom: 58px;
+  background: linear-gradient(to bottom, #ffffff 10%, #fff5f6 10%, #fff5f6 80%, #fff5f6 80%);
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
     padding-bottom: 79px;
-    background: linear-gradient(
-       to bottom,
-     #ffffff 23%,
-     #FFF5F6 23%,
-     #FFF5F6 80%,
-     #FFF5F6 80%)
+    background: linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%, #fff5f6 80%, #fff5f6 80%);
   }
-  
+
   @media screen and (min-width: 1280px) {
-    background-image:url('../images/contacts/background-drops.png'),
-    linear-gradient(
-      to bottom,
-    #ffffff 25%,
-    #FFF5F6 25%,
-    #FFF5F6 80%,
-    #FFF5F6 80%);
+    background-image: url('../images/contacts/background-drops.png'),
+      linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%, #fff5f6 80%, #fff5f6 80%);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 83px;
-    
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1280px) and (min-resolution: 192dpi),
     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-      background-image:url('../images/contacts/background-drops.png'),
-      linear-gradient(
-        to bottom,
-      #ffffff 25%,
-      #FFF5F6 25%,
-      #FFF5F6 80%,
-      #FFF5F6 80%);
+    background-image: url('../images/contacts/background-drops.png'),
+      linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%, #fff5f6 80%, #fff5f6 80%);
   }
 }
-
 
 /** Cards **/
 
@@ -67,8 +44,6 @@
   }
 }
 
-
-
 .contacts-list__item {
   background-color: #ffffff;
 
@@ -80,6 +55,7 @@
   margin-right: auto;
 
   padding: 43px 20px;
+
 
   width: 220px;
 
@@ -111,16 +87,42 @@
         }
       }
 
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    flex-basis: calc((100% - 40px) / 3);
+    padding: 50px 32px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 60px) / 3);
+    padding-left: 44px;
+    padding-right: 43px;
+    padding-top: 51px;
+    padding-bottom: 62px;
+    width: 330px;
+
+    &:not(:last-child) {
+      margin-right: 31px;
+    }
+  }
 }
-
-
 
 .contacts-list__header {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  
+
   letter-spacing: 0.04em;
 
   text-transform: uppercase;
@@ -132,24 +134,23 @@
   padding-left: 25px;
   padding-right: 25px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.86;
-      }
-    
-    @media screen and (min-width: 1280px) {
-        font-size: 16px;
-        line-height: 1.86;
-      }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 
-      &-1 {
-        background-color: #f0d1a5; 
-      }
-    
-      &-2 {
-        background-color: #c2e297;
-      }
+  &-1 {
+    background-color: #f0d1a5;
+  }
+
+  &-2 {
+    background-color: #c2e297;
+  }
 }
 
 .contacts-list__title {
@@ -164,23 +165,20 @@
   padding-top: 25px;
   padding-bottom: 10px;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 30px;
     padding-bottom: 14px;
     font-size: 14px;
     line-height: 1.86;
+  }
 
-    }
-
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 32px;
     padding-bottom: 10px;
     font-size: 16px;
     line-height: 1.86;
-    
-    }
+  }
 }
-
 
 .contacts-list__text {
   font-size: 12px;
@@ -189,13 +187,12 @@
   color: #907e82;
   padding-bottom: 25px;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.64;
+  }
 
-    }
-
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.81;
 
@@ -207,37 +204,32 @@
 
     @media screen and (min-width: 1280px) {
       padding-bottom: 32px;
-  }
     }
-
+  }
 }
 
-
-
-
 .contacts-list__shedule {
-    padding: 25px 0;
-    margin-bottom: 25px;
+  padding: 25px 0;
+  margin-bottom: 25px;
 
-    border-top: 1px solid #E1E1E1 ;
-    border-bottom: 1px solid #E1E1E1 ;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
-    }
+  }
 
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
+  }
 
-    @media screen and (min-width: 768px) {
-        padding: 30px 0;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding: 32px 0;
-    }
+  @media screen and (min-width: 1280px) {
+    padding: 32px 0;
+  }
 }
 
 .contacts-list__works {
@@ -251,16 +243,16 @@
 
   color: #000000;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.04em;
-    }
+  }
 }
 
 .contacts-list__time {
@@ -274,22 +266,19 @@
 
   color: #ffa5ba;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
 
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
-    
-    
-
-    }
+  }
 }
 
 .contacts-list__telmail {
@@ -302,163 +291,153 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.86;
-    }
+  }
 }
 
 /** Buttons **/
 
 .extra-list {
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 0 59px;
-  
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 }
 
-.extra-list__item{
+.extra-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-    
+      margin-right: 14.5px;
+      margin-bottom: 0px;
+    }
+  }
 
-      @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-            margin-right: 14.5px;
-            margin-bottom: 0px;
-        }
-      }
-
-        @media screen and (min-width: 1280px) {
-         &:not(:last-child) {
-            margin-right: 15px;
-            margin-bottom: 0px;
-            }
-        }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 0px;
+    }
+  }
 }
 
+.extra-list__button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
 
+  border-radius: 22px;
+  border: 0px;
 
-.extra-list__button{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+  &--red {
+    background-color: #d41342;
+    padding: 10px 17px;
+  }
 
-    border-radius: 22px;
-    border: 0px;
+  &--white {
+    background-color: #ffffff;
+    padding: 10px 32px;
+  }
 
-    &--red{
-      background-color: #D41342;
-      padding: 10px 17px;
-    }
-
-    &--white{
-      background-color: #FFFFFF;
-      padding: 10px 32px;
-    }
-
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 10px 30px;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding: 10px 35px;
-    }
+  }
 }
 
 .extra-list__button--white:hover,
-.extra-list__button--white:focus{
-        background-color: #ECEBEB;
-        cursor: pointer;
-      }
-
-
-.extra-list__link{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-
-      &--red{
-        color: #FFFFFF;
-      }
-
-      &--white{
-        color: #D41342;
-      }
-    
+.extra-list__button--white:focus {
+  background-color: #ecebeb;
+  cursor: pointer;
 }
 
-.extra-list__icon{
+.extra-list__link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+
+  &--red {
+    color: #ffffff;
+  }
+
+  &--white {
+    color: #d41342;
+  }
+}
+
+.extra-list__icon {
   width: 10px;
   height: 10px;
 
-  &--location{
+  &--location {
     stroke: #ffffff;
   }
 
-  &--franchise{
-    stroke: #D41443;
+  &--franchise {
+    stroke: #d41443;
   }
 }
 
 //////
 
-.modal-map{
+.modal-map {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000033;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-map.is-hidden{
+.modal-map.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.map{
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.map {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.iframe{
+.iframe {
   width: 300px;
   height: 300px;
-  
+
   @media screen and (min-width: 768px) {
     width: 500px;
     height: 500px;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     width: 800px;
     height: 800px;
-    }
+  }
 }
 
-.modal-map__button-close{
+.modal-map__button-close {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -477,6 +456,11 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
+  color: #000000;
+
+
+
+
   @media screen and (max-width: 479px) {
     top: 4px;
     right: 4px;
@@ -492,3 +476,4 @@
   stroke:#000000;
   width: auto;
 }
+
