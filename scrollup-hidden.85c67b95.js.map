@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/scrollup-hidden.js"],"names":["document","onload","getElementById","style","display"],"mappings":";AAAAA,SAASC,OAASD,SAASE,eAAe,YAAYC,MAAMC,QAAU","file":"scrollup-hidden.85c67b95.js","sourceRoot":"../src","sourcesContent":["document.onload = document.getElementById('scrollup').style.display = 'none';"]}
