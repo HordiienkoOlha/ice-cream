@@ -1,0 +1,1 @@
+document.onload = document.getElementById('scrollup').style.display = 'none';
