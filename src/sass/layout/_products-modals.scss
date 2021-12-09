@@ -60,7 +60,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.products-modal__desc {
+  border-radius: 22px;
+}
 .products-modal__desc--pink {
   background-color: $header-bg-color;
 }

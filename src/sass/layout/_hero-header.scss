@@ -672,3 +672,7 @@
     pointer-events: all;
   }
 }
+.menu-nav__link--accent,
+.nav-list__link--accent {
+  color: $color-accent;
+}
