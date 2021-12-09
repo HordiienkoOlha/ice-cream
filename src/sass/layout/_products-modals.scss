@@ -20,7 +20,8 @@
 
 .products-modal {
   width: 90%;
-  padding-top: 250px;
+  padding-top: 270px;
+  max-height: 80vh;
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -28,12 +29,17 @@
 
   @media screen and (min-width: 768px) {
     width: 600px;
-    padding-top: 230px;
+    padding-top: 250px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 800px;
     padding-top: 350px;
+  }
+
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
   }
 
   background-color: $primary-bg-color;
@@ -80,6 +86,8 @@
 .products-modal-close__icon {
   width: 18px;
   height: 18px;
+
+  stroke: $social-color;
 
   .products-modal-close:hover &,
   .products-modal-close:focus & {
