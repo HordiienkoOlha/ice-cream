@@ -22,19 +22,27 @@
   width: 90%;
   padding-top: 270px;
   max-height: 80vh;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: 480px) {
     width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
     width: 600px;
     padding-top: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 800px;
     padding-top: 350px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   overflow: auto;
