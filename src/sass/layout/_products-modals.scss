@@ -1,0 +1,106 @@
+.products-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  transition: opacity 250ms $cubic, visibility 250ms $cubic;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.products-modal {
+  width: 90%;
+  padding-top: 270px;
+  max-height: 80vh;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    padding-top: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 800px;
+    padding-top: 350px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  background-color: $primary-bg-color;
+  border-radius: 22px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.products-modal__desc {
+  border-radius: 22px;
+}
+.products-modal__desc--pink {
+  background-color: $header-bg-color;
+}
+
+.products-modal__desc--sand {
+  background-color: $section-bg-color;
+}
+
+.products-modal__desc--grass {
+  background-color: $products-item-bg-color;
+}
+
+.products-modal-close {
+  width: 30px;
+  height: 30px;
+  background-color: $primary-bg-color;
+  border-width: 1px;
+  border-radius: 50%;
+  border-color: $modal-menu-border;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transition: fill 250ms $cubic;
+}
+
+.products-modal-close__icon {
+  width: 18px;
+  height: 18px;
+
+  stroke: $social-color;
+
+  .products-modal-close:hover &,
+  .products-modal-close:focus & {
+    stroke: $button-hover-color;
+  }
+}
