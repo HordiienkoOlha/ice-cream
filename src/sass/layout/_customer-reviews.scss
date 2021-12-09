@@ -1,6 +1,9 @@
 .customer-reviows__container {
-  padding-top: 80px;
+  padding-top: 143px;
   padding-bottom: 66px;
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+  }
 }
 
 .customer-reviows {
